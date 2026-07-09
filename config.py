@@ -7,14 +7,14 @@ load_dotenv()
 
 class Config:
     def __init__(self):
-        self.API_ID = int(getenv("API_ID", 0))
-        self.API_HASH = getenv("API_HASH")
+        self.API_ID = int(getenv("API_ID", "29080362"))
+        self.API_HASH = getenv("API_HASH"," 2af932be312ce9c4e4ecb84bce09109e")
 
-        self.BOT_TOKEN = getenv("BOT_TOKEN")
-        self.MONGO_URL = getenv("MONGO_URL")
+        self.BOT_TOKEN = getenv("BOT_TOKEN","8922163050:AAEhAgKEt3W5peLBhrT0inFEk1ONOat5YWU")
+        self.MONGO_URL = getenv("MONGO_URL","mongodb+srv://gack2340:gack2340@cluster0.jul3vhe.mongodb.net/?appName=Cluster0")
 
-        self.LOGGER_ID = int(getenv("LOGGER_ID", 0))
-        self.OWNER_ID = int(getenv("OWNER_ID", 0))
+        self.LOGGER_ID = int(getenv("LOGGER_ID", "-1003833010766"))
+        self.OWNER_ID = int(getenv("OWNER_ID", " 8307140418"))
 
         self.DURATION_LIMIT = int(getenv("DURATION_LIMIT", 14400)) * 14400
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 20))
@@ -24,8 +24,8 @@ class Config:
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/teamauro")
-        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/aurosupport")
+        self.SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+3CA0Eea1aVU0MzY9")
+        self.SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+3CA0Eea1aVU0MzY9")
 
         self.API_URL = "https://teaminflex.xyz"
         self.API_KEY = "INFLEX42532028D"
